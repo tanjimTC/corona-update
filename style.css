@@ -1,0 +1,18 @@
+#container-li {
+    padding: 0px;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+}
+#container-li  li{
+    list-style: none;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+#result{
+    margin-top: 20px;
+}
+
+#upper{
+    padding: 100px 20px;
+}

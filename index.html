@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,600&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="upper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+
+                    <div>
+                        <h3 class="text-center">Corona Update</h3>
+                        <form>
+                            <div class="form-group mt-4">
+                                
+                                <div class="input-group input-group-lg">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-primary text-white">
+                                            <i class="fas fa-globe-asia"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control bg-dark text-white" id="getCountry"
+                                        placeholder="Name">
+                                </div>
+                            </div>
+
+                        <input onabort="window.location.href='update.html'" id="search" value="Search" class="btn btn-danger btn-block btn-lg">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center mt-5 " id="result" >
+                    <div >
+                        <ul id="container-li">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        fetch("https://pomber.github.io/covid19/timeseries.json")
+            .then(response => response.json())
+            .then(data => getUpdate(data))
+
+        function getUpdate(data) {
+            document.getElementById('search').addEventListener('click', () => {
+                console.log("click");
+                const country = document.getElementById('getCountry').value;
+                data[country].forEach(({ date, confirmed, recovered, deaths, newline }) => {
+                    const ul = document.getElementById('container-li');
+                    const liList = document.createElement('li');
+                    liList.innerText = (`Date: ${date} 
+                Active cases: ${confirmed} 
+                Recovered: ${recovered} 
+                Deaths: ${deaths}
+                
+                `);
+                    ul.appendChild(liList);
+                });
+            })
+
+
+        }
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

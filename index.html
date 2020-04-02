@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>API</title>
+        <title>COVID-19 Latest Update</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
             integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 
@@ -15,18 +15,22 @@
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon_io/site.webmanifest">
     </head>
 
     <body>
 
         <section id="home">
             <div id="header" class=" text-center ">
-                <h3 class="pt-5 text-light">COVID-19Latest Update</h3>
-                <div class="underline">
+                <h3 class="pt-5 text-light">COVID-19 Latest Update</h3>
+                <div id="homeUL">
                 </div>
 
                 <div class="news p-3">
-                    <marquee class="text-danger">There’s currently no vaccine to prevent coronavirus
+                    <marquee style="color: #AA3333;">There’s currently no vaccine to prevent coronavirus
                         disease (COVID-19).You can protect yourself and help prevent spreading the virus to others if
                         you follow these simple instructions bellow
                     </marquee>
@@ -180,7 +184,7 @@
                             <h3 class="text-center">Corona Update</h3>
                             <div class="underline">
                             </div>
-                            <h5 class="text-danger mb-3">Search Using Country name to get latest update</h5>
+                            <p class="mb-3">Search using country name to get latest update</p>
                             <form>
                                 <div class="form-group mt-5">
 
@@ -194,8 +198,12 @@
                                             placeholder="Name">
                                     </div>
                                 </div>
-                                <input id="search" value="Search" class="btn btn-danger btn-block btn-lg">
+                                
                             </form>
+                            <div>
+                            <button id="search" class="btn btn-danger btn-block btn-lg">Search</button>
+                            <!-- <input id="search" value="Search" class="btn btn-danger btn-block btn-lg"> -->
+                        </div>
                         </div>
                     </div>
 
@@ -219,22 +227,23 @@
 
 
 
-        <footer class="pt-4 px-4 pb-3 bg-dark text-white text-center">
+        <footer class="pt-4 px-4 pb-2 bg-dark text-white text-center">
             <div class="row">
                 <div class="col-md-12">
-                    
+
                     <a href="https://github.com/tanjimTC" target="_blank" class="btn btn-outline-light">
                         <strong> Get in touch! </strong> <i class="fab fa-github"> </i>
                     </a>
 
                     <div class="pt-3 text-center">
-                        <a href="https://www.instagram.com/tanjim_tc/" target="_blank" class="text-white px-2"> <i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://www.instagram.com/tanjim_tc/" target="_blank" class="text-white px-2"> <i
+                                class="fab fa-instagram fa-2x"></i></a>
                         <a href="https://www.linkedin.com/in/tanjim-chowdhury-b98423197" target="_blank"
                             class="text-white px-2"> <i class="fab fa-linkedin fa-2x"></i></a>
                         <a href="mailto:tanjimtc74@gmail.com" target="_blank" class="text-white"> <i
                                 class="fas fa-envelope fa-2x px-2 fas-footer"></i></a>
 
-                                <h5 class="gray text-center mt-4 mb-3">© Tanjim 2020| All right reserved</h5>
+                        <h5 class="gray text-center mt-4 mb-3">© Tanjim 2020| All right reserved</h5>
                     </div>
                 </div>
             </div>

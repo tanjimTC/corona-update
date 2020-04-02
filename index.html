@@ -1,89 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<body lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>API</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,600&display=swap" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 
-<body>
-    <section id="upper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
+    <body>
 
-                    <div>
-                        <h3 class="text-center">Corona Update</h3>
-                        <form>
-                            <div class="form-group mt-4">
-                                
-                                <div class="input-group input-group-lg">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text bg-primary text-white">
-                                            <i class="fas fa-globe-asia"></i>
-                                        </span>
-                                    </div>
-                                    <input type="text" class="form-control bg-dark text-white" id="getCountry"
-                                        placeholder="Name">
-                                </div>
-                            </div>
-
-                        <input onabort="window.location.href='update.html'" id="search" value="Search" class="btn btn-danger btn-block btn-lg">
-                        </form>
-                    </div>
+        <section id="home">
+            <div id="header" class=" text-center ">
+                <h3 class="pt-5 text-light">CODID-19 Latest Update</h3>
+                <div class="underline">
                 </div>
-                <div class="col-md-12 d-flex justify-content-center mt-5 " id="result" >
-                    <div >
-                        <ul id="container-li">
 
-                        </ul>
+                <div class="news p-3">
+                    <marquee class="text-danger">There’s currently no vaccine to prevent coronavirus
+                        disease (COVID-19).You can protect yourself and help prevent spreading the virus to others if
+                        you follow these simple instructions bellow
+                    </marquee>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+
+
+                        <div class="container top">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="header">
+                                        <h3 class="text-center"> <span><i class="fas fa-check-circle"></i></span> DO
+                                        </h3>
+                                        <div class="underline">
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item active">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-12 ">
+                                                <p>Wash your hands regularly for 20 seconds, with soap and water or
+                                                    alcohol-based hand</p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <img src="images/person-washing-his-hand-545014.jpg"
+                                                    class="d-block w-100 img-fluid" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-12 ">
+                                                <p>Cover your nose and mouth with a disposable tissue or flexed elbow
+                                                    when you cough or sneeze </p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <img src="images/57e3c8e7df5decc45a39d4655c32f44164b800b6.jpg"
+                                                    class="d-block w-100 img-fluid" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-12 ">
+                                                <p>Avoid close contact (1 meter or 3 feet) with people who are <br>
+                                                    unwell.</p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <img src="images/mateusz-glogowski-IIoYREXhGTY-unsplash.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-12 ">
+                                                <p>Stay home and self-isolate from others in the household if you feel
+                                                    unwell </p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <img src="images/hand-touching-glass-3944752.jpg"
+                                                    class="d-block w-50 img-fluid rounded mx-auto d-block" alt="...">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="container top">
+                            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <h3 class="text-center"> <span><i class="fas fa-times-circle"></i></span> DON'T
+                                    </h3>
+                                    <div class="underline">
+                                    </div>
+
+                                    <div class="carousel-item active">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-12 ">
+                                                <p>Don't Touch your eyes, nose, or mouth if your hands are not clean.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <img src="images/ron-mcclenny-EpHH_NKwKkE-unsplash.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-12 ">
+                                                <p>Don't Touch your eyes, nose, or mouth if your hands are not clean.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <img src="images/Virus.svg" class="d-block w-50 mx-auto d-block"
+                                                    alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+        </section>
+
+        <section id="searchID">
+            <div class="container upper">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <div>
+                            <h3 class="text-center">Corona Update</h3>
+                            <div class="underline">
+                            </div>
+                            <h5 class="text-danger mb-3">Search Using Country name to get latest update</h5>
+                            <form>
+                                <div class="form-group mt-5">
+
+                                    <div class="input-group input-group-lg">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text bg-primary text-white">
+                                                <i class="fas fa-globe-asia"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control bg-dark text-white" id="getCountry"
+                                            placeholder="Name">
+                                    </div>
+                                </div>
+                                <input id="search" value="Search" class="btn btn-danger btn-block btn-lg">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
 
-    <script>
-
-        fetch("https://pomber.github.io/covid19/timeseries.json")
-            .then(response => response.json())
-            .then(data => getUpdate(data))
-
-        function getUpdate(data) {
-            document.getElementById('search').addEventListener('click', () => {
-                console.log("click");
-                const country = document.getElementById('getCountry').value;
-                data[country].forEach(({ date, confirmed, recovered, deaths, newline }) => {
-                    const ul = document.getElementById('container-li');
-                    const liList = document.createElement('li');
-                    liList.innerText = (`Date: ${date} 
-                Active cases: ${confirmed} 
-                Recovered: ${recovered} 
-                Deaths: ${deaths}
-                
-                `);
-                    ul.appendChild(liList);
-                });
-            })
 
 
-        }
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+
+        <section>
+            <div class="col-md-12 d-flex justify-content-center mt-5 " id="result">
+                <div>
+                    <ul id="container-li">
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="pt-4 px-4 pb-3 bg-dark text-white text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <a href="https://github.com/tanjimTC" target="_blank" class="btn btn-outline-light">
+                        <strong> Get in touch! </strong> <i class="fab fa-github"> </i>
+                    </a>
+
+                    <div class="pt-3 text-center">
+                        <a href="https://www.instagram.com/tanjim_tc/" target="_blank" class="text-white px-2"> <i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/tanjim-chowdhury-b98423197" target="_blank"
+                            class="text-white px-2"> <i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="mailto:tanjimtc74@gmail.com" target="_blank" class="text-white"> <i
+                                class="fas fa-envelope fa-2x px-2 fas-footer"></i></a>
+
+                                <h5 class="gray text-center mt-4 mb-3">© Tanjim 2020| All right reserved</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="custom.js"></script>
+
+    </body>
 
 </body>
-
-</html>

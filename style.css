@@ -175,7 +175,8 @@ h3 {
     background-color: #AA3333;
     color: #FFF;
     border-bottom: 1px solid #000;
-    padding: 2px 0 2px 5px;
+    padding: 7px 0 7px 5px;
+    text-align: center;
 }
 
 #alertBox p {
@@ -188,7 +189,7 @@ h3 {
 #alertBox #closeBtn {
     display: block;
     position: relative;
-    margin: 5px auto;
+    margin: 10px auto;
     padding: 7px;
     border: 0 none;
     width: 70px;

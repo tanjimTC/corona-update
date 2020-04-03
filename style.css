@@ -17,8 +17,7 @@ h3 {
 }
 
 #home {
-    background-image: url(images/Confetti-Doodles.svg);
-    background-repeat: no-repeat;
+    background-image: url(images/result.svg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -117,4 +116,14 @@ h3 {
 
 .fab:hover {
     color: #AA3333!important;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-control:focus, .form-control:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
